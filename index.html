@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Oefevre787的博客</title>
+  <title>Orfevre787</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Oefevre787的博客">
-<meta property="og:url" content="https://orfevre.github.io/index.html">
-<meta property="og:site_name" content="Oefevre787的博客">
+<meta property="og:title" content="Orfevre787">
+<meta property="og:url" content="https://orfevre787.github.io/index.html">
+<meta property="og:site_name" content="Orfevre787">
 <meta property="og:locale">
 <meta property="article:author" content="云帆沧海">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Oefevre787的博客" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Orfevre787" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -42,7 +42,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Oefevre787的博客</a>
+        <a href="/" id="logo">Orfevre787</a>
       </h1>
       
     </div>
@@ -57,12 +57,12 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://orfevre.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Rechercher"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://orfevre787.github.io"></form>
       </div>
     </div>
   </div>
@@ -70,6 +70,52 @@
 
       <div class="outer">
         <section id="main">
+  
+    <article id="post-终于把顶图换好了" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/24/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/" class="article-date">
+  <time class="dt-published" datetime="2022-06-24T11:53:37.000Z" itemprop="datePublished">2022-06-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/24/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/">终于把顶图换好了</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>发现好多人的博客顶图都是hexo默认的，所以想把它换一下。<br>简单查一下，那张图在这两个位置：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public文件夹部分目录</span><br><span class="line">├─css</span><br><span class="line">│  ├─fonts</span><br><span class="line">│  └─images</span><br><span class="line">├─fancybox</span><br><span class="line">└─js</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.deploy_git文件夹部分目录</span><br><span class="line">├─css</span><br><span class="line">│  ├─fonts</span><br><span class="line">│  └─images</span><br><span class="line">├─fancybox</span><br><span class="line">└─js</span><br></pre></td></tr></table></figure>
+<p>就在image文件夹里   </p>
+<p>换掉，麻溜重启服务器，结果……<br>没有任何变化。</p>
+<p>赶紧上网搜一下，教程里的目录结构完全不一样，根本没有任何帮助。<br>再查一下，发现事情不简单。<br>在node_modules\hexo-theme-landscape\source\css\images、node_modules\hexo-cli\assets\themes\landscape\source\css\images都有这个文件。全部替换掉之后，果然好了。</p>
+<p>再附一下原图的地址：<a target="_blank" rel="noopener" href="https://t.bilibili.com/674870530507014217?spm_id_from=333.999.0.0">星球研究所</a></p>
+<p><img src="https://github.com/orfevre787/orfevre787.github.io/blob/main/css/images/banner.jpg">裁剪过的</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://orfevre787.github.io/2022/06/24/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/" data-id="cl4sfa6fd0000v45x2q210jcl" data-title="终于把顶图换好了" class="article-share-link">Partager</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-终于成功啦！" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -99,7 +145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://orfevre.github.io/2022/06/23/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E5%95%A6%EF%BC%81/" data-id="cl4r09g970000sg5xdxlod0zd" data-title="终于成功啦！" class="article-share-link">Share</a>
+      <a data-url="https://orfevre787.github.io/2022/06/23/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E5%95%A6%EF%BC%81/" data-id="cl4r09g970000sg5xdxlod0zd" data-title="终于成功啦！" class="article-share-link">Partager</a>
       
       
       
@@ -140,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://orfevre.github.io/2022/06/23/test/" data-id="cl4qz0vs50000rw5xa9heanls" data-title="test" class="article-share-link">Share</a>
+      <a data-url="https://orfevre787.github.io/2022/06/23/test/" data-id="cl4qz0vs50000rw5xa9heanls" data-title="test" class="article-share-link">Partager</a>
       
       
       
@@ -191,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://orfevre.github.io/2022/06/22/hello-world/" data-id="cl4pj1xj90000ps5xbcqk53tc" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://orfevre787.github.io/2022/06/22/hello-world/" data-id="cl4pj1xj90000ps5xbcqk53tc" data-title="Hello World" class="article-share-link">Partager</a>
       
       
       
@@ -229,9 +275,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/06/24/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/">终于把顶图换好了</a>
+          </li>
         
           <li>
             <a href="/2022/06/23/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E5%95%A6%EF%BC%81/">终于成功啦！</a>
@@ -259,7 +309,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2022 云帆沧海<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Propulsé par <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
