@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>费曼算法：最伟大的算法</title>
+    <link href="/2022/08/12/%E8%B4%B9%E6%9B%BC%E7%AE%97%E6%B3%95%EF%BC%9A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/08/12/%E8%B4%B9%E6%9B%BC%E7%AE%97%E6%B3%95%EF%BC%9A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<p>费曼算法：  </p><pre><code class="hljs">1.将问题写下来    2.好好思考3.将答案写下来</code></pre><p><del>什么鬼</del><br>这就是它的伟大之处，是解决一切问题的通用方法，无论是编程、数学题还是其他麻烦。这个看起来不是算法的算法让我大受震撼，因为它体现出了一种简洁：时间复杂度未知，没有任何的代码或公式，简单易懂，跨平台……<br>用大O表示法描述该算法操作步数为：  </p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">O</span><span class="hljs-params">(n)</span></span>=*<br></code></pre></td></tr></table></figure><p>*为通配符。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>-算法 -杂谈</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>WSL从入坑到放弃（WSL劝退指南）</title>
     <link href="/2022/07/03/WSL%E4%BB%8E%E5%85%A5%E5%9D%91%E5%88%B0%E6%94%BE%E5%BC%83%EF%BC%88WSL%E5%8A%9D%E9%80%80%E6%8C%87%E5%8D%97%EF%BC%89/"/>
     <url>/2022/07/03/WSL%E4%BB%8E%E5%85%A5%E5%9D%91%E5%88%B0%E6%94%BE%E5%BC%83%EF%BC%88WSL%E5%8A%9D%E9%80%80%E6%8C%87%E5%8D%97%EF%BC%89/</url>
