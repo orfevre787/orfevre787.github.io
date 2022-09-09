@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>用Django开发一个博客框架（0）</title>
+      <link href="/2022/09/09/%E7%94%A8Django%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%EF%BC%880%EF%BC%89/"/>
+      <url>/2022/09/09/%E7%94%A8Django%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%EF%BC%880%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>在网上查找博客框架，竟没有一个是用Python开发的，于是我决定自己做一个。  </p><p>框架名称定为Aeonium，即景天科莲花掌属。博客我会一直做下去，希望这个系列最后一篇文章是在我的新博客上发布。 </p><p>废话不多说，开整！  </p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs powershell">django<span class="hljs-literal">-admin</span> startproject blog .<br>python manage.py startapp aeonium<br></code></pre></td></tr></table></figure><p>在aeonium&#x2F;models.py添加：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Post</span>(models.Model):<br>    <span class="hljs-string">&#x27;&#x27;&#x27;main class for blog&#x27;&#x27;&#x27;</span><br>    title = models.CharField(max_length=<span class="hljs-number">255</span>)<br>    text = models.TextField()<br>    dateadded = models.DateTimeField(auto_now_add=<span class="hljs-literal">True</span>)<br></code></pre></td></tr></table></figure><p>本地化（在blog&#x2F;settings.py）：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">LANGUAGE_CODE = <span class="hljs-string">&quot;zh-Hans&quot;</span><br><br>TIME_ZONE = <span class="hljs-string">&quot;Asia/Shanghai&quot;</span><br></code></pre></td></tr></table></figure><p>之后啥都是中文的啦！<br>迁移：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs powershell">python manage.py makemigrations<br>python manage.py migrate<br></code></pre></td></tr></table></figure><p>创建超级用户：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">python manage.py createsuperuser<br></code></pre></td></tr></table></figure><p>在创建时发生了一件哭笑不得的事情——创建失败，原因竟是忘记了<code>python manage.py migrate</code>……</p><p>今天就先搞到这里了！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> django </tag>
+            
+            <tag> Web开发 </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>费曼算法：最伟大的算法</title>
+      <link href="/2022/08/12/%E8%B4%B9%E6%9B%BC%E7%AE%97%E6%B3%95%EF%BC%9A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E7%AE%97%E6%B3%95/"/>
+      <url>/2022/08/12/%E8%B4%B9%E6%9B%BC%E7%AE%97%E6%B3%95%EF%BC%9A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>费曼算法：  </p><pre><code class="hljs">1.将问题写下来    2.好好思考3.将答案写下来</code></pre><p><del>什么鬼</del><br>这就是它的伟大之处，是解决一切问题的通用方法，无论是编程、数学题还是其他麻烦。这个看起来不是算法的算法让我大受震撼，因为它体现出了一种简洁：时间复杂度未知，没有任何的代码或公式，简单易懂，跨平台……<br>用大O表示法描述该算法操作步数为：  </p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">O</span><span class="hljs-params">(n)</span></span>=*<br></code></pre></td></tr></table></figure><p>*为通配符。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WSL从入坑到放弃（WSL劝退指南）</title>
+      <link href="/2022/07/03/WSL%E4%BB%8E%E5%85%A5%E5%9D%91%E5%88%B0%E6%94%BE%E5%BC%83%EF%BC%88WSL%E5%8A%9D%E9%80%80%E6%8C%87%E5%8D%97%EF%BC%89/"/>
+      <url>/2022/07/03/WSL%E4%BB%8E%E5%85%A5%E5%9D%91%E5%88%B0%E6%94%BE%E5%BC%83%EF%BC%88WSL%E5%8A%9D%E9%80%80%E6%8C%87%E5%8D%97%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>第一次听说WSL的时候，我觉得这简直是个神器————在Windows上直接跑Linux命令行，还有便捷的包管理工具，输入指令就可以下载软件，还可以在Windows文件目录下交互……</p><p>但是在用了一段时间后，我逐渐对它失去了兴趣，甚至感到厌烦。  </p><h2 id="缺失软件的apt包"><a href="#缺失软件的apt包" class="headerlink" title="缺失软件的apt包"></a>缺失软件的apt包</h2><p>首先，因为没有GUI，所以只能下载在终端运行的软件，可下载的一下子减少了很多。</p><p>其次，就是apt包的奇怪之处了。像figlet这样的只在终端运行的软件也无法下载，而且是被锁了，不是“找不到软件”。</p><h2 id="我与sources-list斗智斗勇的故事"><a href="#我与sources-list斗智斗勇的故事" class="headerlink" title="我与sources.list斗智斗勇的故事"></a>我与sources.list斗智斗勇的故事</h2><p>众所周知，Ubuntu的默认镜像源下载速度非常慢，于是需要修改镜像源。<br>由于wsl官方不支持GUI，所以只能用Vim修改。（Ubuntu WSL自带Vim）  </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure><p>根本不能操作，只能退出重试。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo vim /etc/apt/sources.list<br></code></pre></td></tr></table></figure><p>作为一个新手，光是熟悉Vim就花了不少时间。<br><del>正经人谁用Vim啊</del><br>一路d(删除)下来，在Ctrl+V换上清华源的镜像，麻溜保存退出。为了确保修改成功，又执行了一遍上面的指令，但镜像列表岿然不动，就像没人动过一样。  </p><p>于是我又重复做了几遍修改操作，但那列表好像是有金钟罩一样，任我怎么更改，都不能改变它的内容。 </p><p>就在我手无举措的时候，一根“救命稻草”吸引了我。这根“稻草”就是Vscode。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">code /etc/apt/sources.list<br></code></pre></td></tr></table></figure><p>修改过后IDE显示无法保存。原因很简单，没有加sudo。<br>但是加了之后：</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">sudo:</span> <span class="hljs-meta">code</span>: command not found<br></code></pre></td></tr></table></figure><p>只能继续使用Vim。</p><p>真的，用了Vim之后你会心情沮丧的！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> WSL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>终于把顶图换好了</title>
+      <link href="/2022/06/30/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/"/>
+      <url>/2022/06/30/%E7%BB%88%E4%BA%8E%E6%8A%8A%E9%A1%B6%E5%9B%BE%E6%8D%A2%E5%A5%BD%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p>发现好多人的博客顶图都是hexo默认的，所以想把它换一下。<br>简单查一下，那张图在这两个位置：  </p><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs x86asm"><span class="hljs-meta">public</span>文件夹部分目录<br>├─css<br>│  ├─fonts<br>│  └─images<br>├─fancybox<br>└─<span class="hljs-keyword">js</span><br></code></pre></td></tr></table></figure><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs x86asm"><span class="hljs-meta">.deploy_git</span>文件夹部分目录<br>├─css<br>│  ├─fonts<br>│  └─images<br>├─fancybox<br>└─<span class="hljs-keyword">js</span><br></code></pre></td></tr></table></figure><p>就在image文件夹里   </p><p>换掉，麻溜重启服务器，结果……<br>没有任何变化。</p><p>赶紧上网搜一下，教程里的目录结构完全不一样，根本没有任何帮助。<br>再查一下，发现事情不简单。<br>在node_modules\hexo-theme-landscape\source\css\images、node_modules\hexo-cli\assets\themes\landscape\source\css\images都有这个文件。全部替换掉之后，果然好了。</p><p>再附一下原图的地址：<a href="https://t.bilibili.com/674870530507014217?spm_id_from=333.999.0.0">星球研究所</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>终于成功啦！</title>
+      <link href="/2022/06/29/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E5%95%A6%EF%BC%81/"/>
+      <url>/2022/06/29/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E5%95%A6%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<p>照着知乎的教程搞的，每次的部署失败，<br>结果一个<code>$ hexo d</code>就成了</p><p><img src="https://img.shields.io/badge/hexo-blue?style=for-the-badge&logo=hexo&logoColor=white"><br><img src="https://img.shields.io/badge/node-43853D?style=for-the-badge&logo=node.js&logoColor=white"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
