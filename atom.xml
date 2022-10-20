@@ -6,7 +6,7 @@
   <link href="https://orfevre787.github.io/atom.xml" rel="self"/>
   
   <link href="https://orfevre787.github.io/"/>
-  <updated>2022-09-15T12:43:23.233Z</updated>
+  <updated>2022-10-20T12:08:54.185Z</updated>
   <id>https://orfevre787.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>oh-my-posh随机主题</title>
+    <link href="https://orfevre787.github.io/2022/10/20/oh-my-posh%E9%9A%8F%E6%9C%BA%E4%B8%BB%E9%A2%98/"/>
+    <id>https://orfevre787.github.io/2022/10/20/oh-my-posh%E9%9A%8F%E6%9C%BA%E4%B8%BB%E9%A2%98/</id>
+    <published>2022-10-20T12:05:09.000Z</published>
+    <updated>2022-10-20T12:08:54.185Z</updated>
+    
+    <content type="html"><![CDATA[<p>听说oh-my-zsh有开启时随机主题的功能，于是就想在Oh-my-posh上搞一个。  </p><p>把你的配置文件改成这样：</p><pre class="line-numbers language-Powershell" data-language="Powershell"><code class="language-Powershell">#有点儿丧心病狂了哈哈哈$theme&#x3D;Get-Random()#括号里填你想要的主题oh-my-posh init pwsh --config &quot;$env:POSH_THEMES_PATH\$theme.omp.json&quot; | Invoke-Expression <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;听说oh-my-zsh有开启时随机主题的功能，于是就想在Oh-my-posh上搞一个。  &lt;/p&gt;
+&lt;p&gt;把你的配置文件改成这样：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-Powershell&quot; data-language=&quot;Powers</summary>
+      
+    
+    
+    
+    
+    <category term="PowerShell" scheme="https://orfevre787.github.io/tags/PowerShell/"/>
+    
+    <category term="oh-my-posh" scheme="https://orfevre787.github.io/tags/oh-my-posh/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo明日方舟主题折腾指南</title>

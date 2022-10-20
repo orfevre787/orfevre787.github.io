@@ -1,3 +1,4 @@
+https://orfevre787.github.io/2022/10/20/oh-my-posh%E9%9A%8F%E6%9C%BA%E4%B8%BB%E9%A2%98/
 https://orfevre787.github.io/2022/09/15/Hexo%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%8C%87%E5%8D%97/
 https://orfevre787.github.io/2022/09/09/%E7%94%A8Django%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%EF%BC%880%EF%BC%89/
 https://orfevre787.github.io/2022/08/12/%E8%B4%B9%E6%9B%BC%E7%AE%97%E6%B3%95%EF%BC%9A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E7%AE%97%E6%B3%95/
@@ -15,3 +16,5 @@ https://orfevre787.github.io/tags/Web%E5%BC%80%E5%8F%91/
 https://orfevre787.github.io/tags/%E5%8D%9A%E5%AE%A2/
 https://orfevre787.github.io/tags/%E7%AE%97%E6%B3%95/
 https://orfevre787.github.io/tags/%E6%9D%82%E8%B0%88/
+https://orfevre787.github.io/tags/PowerShell/
+https://orfevre787.github.io/tags/oh-my-posh/
